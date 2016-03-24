@@ -1,0 +1,31 @@
+cordova.define('cordova/plugin_list', function(require, exports, module) {
+module.exports = [
+    {
+        "file": "plugins/cordova-plugin-nativeaudio/www/nativeaudio.js",
+        "id": "cordova-plugin-nativeaudio.nativeaudio",
+        "clobbers": [
+            "window.plugins.NativeAudio"
+        ]
+    },
+    {
+        "file": "plugins/onesignal-cordova-plugin/www/OneSignal.js",
+        "id": "onesignal-cordova-plugin.OneSignal",
+        "clobbers": [
+            "OneSignal"
+        ]
+    },
+    {
+        "file": "plugins/cordova-plugin-whitelist/whitelist.js",
+        "id": "cordova-plugin-whitelist.whitelist",
+        "runs": true
+    }
+];
+module.exports.metadata = 
+// TOP OF METADATA
+{
+    "cordova-plugin-nativeaudio": "3.0.6",
+    "onesignal-cordova-plugin": "1.11.2",
+    "cordova-plugin-whitelist": "1.2.1"
+};
+// BOTTOM OF METADATA
+});
